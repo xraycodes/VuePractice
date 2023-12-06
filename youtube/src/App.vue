@@ -1,8 +1,8 @@
 <script setup>
-    import {} from 'vue'
-    
-    import LeftNavbar from './components/LeftNavbar.vue'
+import {} from 'vue'
 
+import LeftNavbar from './components/LeftNavbar.vue'
+import ContentThumbnails from './components/ContentThumbnails.vue';
 </script>
 
 <template>
@@ -21,20 +21,30 @@
     <button>Upload</button>
     <button>Bell</button>
     </div>
-</body>
 
-<LeftNavbar/>
+    <div id="cont">
+        <LeftNavbar/>
+        <ContentThumbnails/>
+    </div>
+</body>
 </html>
 
 </template>
 
 <style scoped>
+
+#cont {
+    display:flex;
+    /* background-color: red; */
+    justify-content: space-around;
+}
+
 .flexbox-container {
     display:flex;
     justify-content: space-between;
     align-items: center;
     align-content: flex-start;
-    margin: 0 0 20px 0
+    margin: 0 0 20px 0;
     /* background-color: aqua; */
 }
 

@@ -6,28 +6,26 @@ const lowerMenu = ['Subscriptions']
 </script>
 
 <template>
-    <div id="outer-container">
-        <div id="topMenu">
-            <div v-for="menu in topMenu">{{ menu }}</div>
-        </div>
-        <hr>
-
-        <div id="middleMenu">
-            <div v-for="menu in middleMenu">{{ menu }}</div>
-        </div>
-    
-    
-
-    </div>
-
-
+        <div id="outer-container">
+            <div id="topMenu">
+                <div id="menu" v-for="menu in topMenu">{{ menu }}</div>
+            </div>
+            <hr>
+            <div id="middleMenu">
+                <div id="menu" v-for="menu in middleMenu">{{ menu }}</div>
+            </div>
+        </div>  
 </template>
 
-<style>
+<style scoped>
+
 
 #outer-container {
     width: 15%;
-    background-color: pink;
+    /* background-color: pink; */
+    display: block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #topMenu {
     display:flex;
@@ -42,6 +40,10 @@ const lowerMenu = ['Subscriptions']
     display: flex;
     flex-direction:column;
     align-items: center;
+}
+
+#menu {
+    margin: 0px 10px 10px 10px
 }
 
 </style>
