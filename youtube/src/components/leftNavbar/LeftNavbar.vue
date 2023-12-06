@@ -1,5 +1,7 @@
 <script setup>
-const topMenu = ['Home', 'Shorts', 'Subscriptions']
+import {ref} from 'vue'
+
+const topMenu = ref(['Home', 'Shorts', 'Subscriptions'])
 const middleMenu = ['Your channel','History','Your videos', 'Watch later','Show more']
 const lowerMenu = ['Subscriptions']
 
@@ -8,13 +10,26 @@ const lowerMenu = ['Subscriptions']
 <template>
         <div id="outer-container">
             <div id="topMenu">
-                <div id="menu" v-for="menu in topMenu">{{ menu }}</div>
+                <div id="menuItemCSS" v-for="menu in topMenu">
+                    <a href="./Home.vue"> {{ menu }}</a>
+                </div>
             </div>
             <hr>
             <div id="middleMenu">
-                <div id="menu" v-for="menu in middleMenu">{{ menu }}</div>
+                <div id="menuItemCSS" v-for="menu in middleMenu">
+                    <a href="">{{ menu }}</a>
+                </div>
             </div>
+            <hr>
+            <div id="lowerMenu">
+                <div id="menuItemCSS" v-for="menu in lowerMenu">
+                    <a href="">{{ menu }}</a>
+                </div>
+            </div>
+
         </div>  
+
+
 </template>
 
 <style scoped>
@@ -42,7 +57,12 @@ const lowerMenu = ['Subscriptions']
     align-items: center;
 }
 
-#menu {
+#lowerMenu {
+    display: flex;
+    justify-content: center;
+}
+
+#menuItemCSS {
     margin: 0px 10px 10px 10px
 }
 
