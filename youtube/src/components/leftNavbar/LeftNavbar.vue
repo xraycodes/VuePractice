@@ -11,7 +11,7 @@ const lowerMenu = ['Subscriptions']
         <div id="outer-container">
             <div id="topMenu">
                 <div id="menuItemCSS" v-for="menu in topMenu">
-                    <a href="./Home.vue"> {{ menu }}</a>
+                    <router-link :to="{ name:'Home' }">{{ menu }} </router-link>
                 </div>
             </div>
             <hr>
