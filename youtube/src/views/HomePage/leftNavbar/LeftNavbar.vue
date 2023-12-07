@@ -17,13 +17,13 @@ const lowerMenu = ['Subscriptions']
             <hr>
             <div id="middleMenu">
                 <div id="menuItemCSS" v-for="menu in middleMenu">
-                    <a href="">{{ menu }}</a>
+                    <router-link :to="{ name:'YourChannel'}">{{ menu }}</router-link>
                 </div>
             </div>
             <hr>
             <div id="lowerMenu">
                 <div id="menuItemCSS" v-for="menu in lowerMenu">
-                    <a href="">{{ menu }}</a>
+                    <!-- <router-link :to="{ name:'YourChannel'}">{{ menu }}</router-link> -->
                 </div>
             </div>
 

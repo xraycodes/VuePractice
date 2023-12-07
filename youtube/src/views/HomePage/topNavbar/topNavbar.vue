@@ -4,7 +4,7 @@
 
 <template>
      <div id="topNavbarContainer">
-        <img src="../../assets/images/YTLogo.png" width="200" height="40">
+        <img src="../../../assets/images/YTLogo.png" width="200" height="40">
         <input type="text" placeholder="Search">
         <button>Upload</button>
         <button>Bell</button>
