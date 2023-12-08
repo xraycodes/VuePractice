@@ -9,6 +9,10 @@ const routes = [
         component: Home
     },
     {
+        path: '/',
+        component: Home
+    },
+    {
         path: '/yourChannel',
         name: 'YourChannel',
         component: YourChannel

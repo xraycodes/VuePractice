@@ -3,7 +3,7 @@
 
 <template>
     <div id="outer-container">
-        <img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt="">
+        <a href="../../views/YourChannel/index.vue"><img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt=""></a>
         <img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt="">
         <img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt="">
         <img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt="">
