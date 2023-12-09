@@ -3,8 +3,8 @@
 
 <template>
     <div id="outer-container">
-        <a href="../../views/YourChannel/index.vue"><img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt=""></a>
-        <img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt="">
+        <router-link :to="{ name:'MJTrashTalk' }"><img id="thumbnails" src="../../assets/images/mjshoes.jpg" alt=""></router-link>
+        <router-link :to="{ name:'JerseyNumbers' }"><img id="thumbnails" src="../../assets/images/jerseynumbers1.jpg" alt=""></router-link>
         <img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt="">
         <img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt="">
         <img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt="">

@@ -4,7 +4,7 @@
 
 <template>
      <div id="topNavbarContainer">
-        <img src="../../../assets/images/YTLogo.png" width="200" height="40">
+        <img src="../../../assets/images/YTLogo.png" id="img" width="200" height="40">
         <input type="text" placeholder="Search">
         <button>Upload</button>
         <button>Bell</button>
@@ -18,8 +18,11 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 0 0 10px 0;
-
+    background-color: aquamarine;
 }
     
+#img {
+    margin-right:auto ;
+}
 </style>
    
