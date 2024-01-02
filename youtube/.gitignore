@@ -27,4 +27,4 @@ coverage
 *.sln
 *.sw?
 
-videos/
+src/assets/videos/
