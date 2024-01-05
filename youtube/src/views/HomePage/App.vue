@@ -1,17 +1,19 @@
 <script setup>
 import {} from 'vue'
 
-import topNavbar from './topNavbar/topNavbar.vue';
-import LeftNavbar from './leftNavbar/LeftNavbar.vue'
+import topNavbar from './topNavbar.vue';
+import LeftNavbar from './LeftNavbar.vue';
+
 import ContentThumbnails from './ContentThumbnails.vue';
 
 </script>
 
 <template>
+     
     <topNavbar/> 
 
     <div id="containerForLeftNavbarAndThumbnails">
-        <LeftNavbar/>
+        <LeftNavbar class="leftNavbarClass"/>
         <ContentThumbnails/>
     </div>
 
@@ -19,10 +21,16 @@ import ContentThumbnails from './ContentThumbnails.vue';
 
 <style scoped>
 
-#containerForLeftNavbarAndThumbnails {
-    display:flex;
-    /* background-color: red; */
-    justify-content: space-around;
+.leftNavbarClass {
+    display:inline;
+    width: 100px;
+    margin-left: 50px;
 }
+
+/* #containerForLeftNavbarAndThumbnails { */
+    /* display:flex; */
+    /* background-color: red; */
+    /* justify-content: space-around; */
+/* } */
 
 </style>

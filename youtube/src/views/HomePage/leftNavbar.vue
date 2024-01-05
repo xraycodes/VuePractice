@@ -36,9 +36,9 @@ const lowerMenu = ['Subscriptions']
 
 
 #outer-container {
-    width: 15%;
     /* background-color: pink; */
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }

@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <div id="outer-container">
+    <div id="grid-container">
         <div class="videos-container">
             <router-link :to="{ name:'MJTrashTalk' }"><img id="thumbnails" src="../../assets/images/mjshoes.jpg" alt=""></router-link>
             <p class="videoTitle">This Is Why You Don't Make Fun Of MJ's Shoes(Concord 11s)</p>
@@ -42,11 +42,12 @@
     /* border: 10px; */
     /* background-color: aqua; */
 }
-#outer-container{
+#grid-container{
     /* background-color: aqua; */
-    display: flex;
+    display: grid;
     /* justify-content: flex-start; */
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap:10px;
 }
 #thumbnails {
