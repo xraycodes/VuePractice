@@ -21,16 +21,18 @@ import ContentThumbnails from './ContentThumbnails.vue';
 
 <style scoped>
 
-.leftNavbarClass {
-    display:inline;
-    width: 100px;
-    margin-left: 50px;
+.leftNavbarClass{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
 }
 
-/* #containerForLeftNavbarAndThumbnails { */
-    /* display:flex; */
+#containerForLeftNavbarAndThumbnails {
+    display:grid;
+    grid-template-columns: 0.5fr auto; 
     /* background-color: red; */
-    /* justify-content: space-around; */
-/* } */
+    /* justify-content: space-evenly;  */
+    gap: 30px;
+}
 
 </style>

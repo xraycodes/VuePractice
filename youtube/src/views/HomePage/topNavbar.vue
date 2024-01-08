@@ -43,7 +43,7 @@
 } */
 
 #item1{
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 #item2{

@@ -3,6 +3,7 @@ import Home from '../views/HomePage/App.vue'
 import YourChannel from '../views/YourChannel/index.vue'
 import MJTrashTalk from '../views/videos/MJTrashTalk.vue'
 import JerseyNumbers from '../views/videos/JerseyNumbers.vue'
+import Resume from '../views/HomePage/resume.vue'
 const routes = [
     {
         path: '/home',
@@ -27,6 +28,11 @@ const routes = [
         path: '/JerseyNumbers',
         name: 'JerseyNumbers',
         component: JerseyNumbers
+    },
+    {
+        path: '/Resume',
+        name: 'Resume',
+        component: Resume
     }
 ];
 

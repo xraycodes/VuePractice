@@ -1,4 +1,5 @@
 <script setup>
+import resume from './resume.vue';
 </script>
 
 <template>
@@ -15,7 +16,10 @@
             <router-link :to="{ name:'JerseyNumbers' }"><img id="thumbnails" src="../../assets/images/jerseynumbers1.jpg" alt=""></router-link>
             <p class="videoTitle">Stories Behind Jersey Numbers of NBA Superstars</p>
         </div>
-
+        <div class="videos-container">
+            <router-link :to="{ name:'Resume' }"><img id="thumbnails" src="../../assets/images/resume.jpg" alt=""></router-link>
+            <p class="videoTitle">My Resume</p>
+        </div>
 
         <img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt="">
         <img id="thumbnails" src="../../assets/images/IMG_305882.jpg" alt="">
@@ -51,9 +55,7 @@
     gap:10px;
 }
 #thumbnails {
-    display: inline-block;
-    width: 330px;
-    height: 200px;
+    height: 200px; 
     border-radius: 10px;
 }
 

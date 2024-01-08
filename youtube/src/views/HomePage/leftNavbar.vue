@@ -41,6 +41,8 @@ const lowerMenu = ['Subscriptions']
     flex-direction: column;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-right: 0px;;
 }
 #topMenu {
     display:flex;
